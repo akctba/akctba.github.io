@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>Oh nooo... wrong page!</p>
+    <p>Redirecting <span id="output"></span></p>
+    <script>
+        var t = 3;
+
+        // simple countdown to redirect
+        var x = setInterval(()=>{
+            document.getElementById('output').innerHTML = t;
+            t--;
+
+            if (t <=0 ) {
+                window.location.replace("/");
+            }
+        }, 1000);
+        
+
+    </script>
+</body>
+</html>
