@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="../styles/main.css">
 </head>
+
 <body>
-    <p>Oh nooo... wrong page!</p>
-    <p>Redirecting <span id="output"></span></p>
+    <!-- index file to protect the folder from direct access -->
+    <h1>Oh nooo... Access denied!</h1>
+    <p>Redirecting in <span id="output"></span></p>
     <script>
         var t = 3;
 
-        // simple countdown to redirect
-        var x = setInterval(()=>{
+        // countdown to redirect
+        var x = setInterval(() => {
             document.getElementById('output').innerHTML = t;
             t--;
 
-            if (t <=0 ) {
+            if (t <= 0) {
                 window.location.replace("/");
             }
-        }, 1000);
-        
-
+        }, 1000); //this time should be shorter in the production environment
     </script>
 </body>
+
 </html>
