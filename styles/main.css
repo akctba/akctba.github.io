@@ -95,4 +95,8 @@ section {
 section h1 {
   padding: 20px;
 }
+
+footer {
+  min-height: 300px;
+}
 /*# sourceMappingURL=main.css.map */
