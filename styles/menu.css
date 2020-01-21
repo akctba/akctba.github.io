@@ -1,0 +1,73 @@
+.menuItem {
+  padding: 10px;
+  border: 3px solid green;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 1px grey;
+          box-shadow: 3px 3px 1px grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menuItem .mnLed {
+  width: 100%;
+  text-align: right;
+  font-size: large;
+}
+
+.menuItem .mnName {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.menuItem a {
+  text-decoration: none;
+}
+
+.menuItem:hover {
+  background-color: #1f1f1f;
+  -webkit-box-shadow: 3px 3px 1px #4dcc4d;
+          box-shadow: 3px 3px 1px #4dcc4d;
+  cursor: pointer;
+}
+
+.menuItem:hover .mnLed {
+  color: #4dcc4d;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  .navGroup {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid green;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  .navGroup {
+    border-left: 3px solid blue;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 415px) {
+  .navGroup {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+    row-gap: 12px;
+    border-left: 3px solid green;
+    border-bottom: none;
+    padding-left: 20px;
+  }
+}
+/*# sourceMappingURL=menu.css.map */

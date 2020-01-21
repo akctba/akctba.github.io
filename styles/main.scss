@@ -44,51 +44,15 @@ nav {
     padding: 20px;
 }
 
-.navGroup {
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 20px;
-
-    padding-bottom: 20px;
-    border-bottom: 3px solid green;
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 380px) {
+    .logo {
+        width: 120px;
+        padding: 20px;
+    }
 }
 
-.menuItem {
-
-    padding: 10px;
-    border: 3px solid green;
-    border-radius: 10px;
-
-    box-shadow: 3px 3px 1px grey;
-    display: flex;
-
-    .mnLed {
-        width: 100%;
-        text-align: right;
-        font-size: large;
-    }
-
-    .mnName {
-        width: fit-content;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-}
-
-.menuItem:hover {
-
-    box-shadow: 3px 3px 1px #4dcc4d;
-    cursor: pointer;
-
-    .mnLed {
-        color: #4dcc4d;
-    }
-
-}
 
 section {
     min-height: 500px;

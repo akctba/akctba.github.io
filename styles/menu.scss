@@ -1,0 +1,75 @@
+
+
+.menuItem {
+
+    padding: 10px;
+    border: 3px solid green;
+    border-radius: 10px;
+
+    box-shadow: 3px 3px 1px grey;
+    display: flex;
+
+    .mnLed {
+        width: 100%;
+        text-align: right;
+        font-size: large;
+    }
+
+    .mnName {
+        width: fit-content;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+}
+
+.menuItem:hover {
+    background-color: rgb(31, 31, 31);
+    box-shadow: 3px 3px 1px #4dcc4d;
+    cursor: pointer;
+
+    .mnLed {
+        color: #4dcc4d;
+    }
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+    .navGroup {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 20px;
+    
+        padding-bottom: 20px;
+        border-bottom: 3px solid green;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+    .navGroup {
+        border-left: 3px solid blue;
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 415px) {
+
+    .navGroup {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 12px;
+        
+        border-left: 3px solid green;
+        border-bottom: none;
+
+        padding-left: 20px;
+    }
+
+}
