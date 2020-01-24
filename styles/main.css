@@ -52,14 +52,17 @@ nav {
 section {
   min-height: 500px;
   padding-top: 100px;
+  margin: 0 auto;
 }
 
 section h1 {
+  text-align: center;
   padding: 20px;
 }
 
 footer {
   min-height: 300px;
+  text-align: center;
 }
 
 /* The Modal (background) */
@@ -115,8 +118,8 @@ footer {
 }
 
 .expFrame {
-  height: 200px;
-  width: 300px;
+  height: 400px;
+  width: 100%;
   border: none;
 }
 /*# sourceMappingURL=main.css.map */
