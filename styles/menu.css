@@ -2,6 +2,7 @@
   padding: 10px;
   border: 3px solid green;
   border-radius: 10px;
+  font-size: medium;
   -webkit-box-shadow: 3px 3px 1px grey;
           box-shadow: 3px 3px 1px grey;
   display: -webkit-box;
