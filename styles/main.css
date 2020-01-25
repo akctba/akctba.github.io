@@ -155,6 +155,21 @@ nav {
   border-top: 1px solid rgba(76, 176, 247, 0.5);
 }
 
+.skillsContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.skillsContainer .skill {
+  margin: 20px;
+}
+
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 380px) {
   .logo {
