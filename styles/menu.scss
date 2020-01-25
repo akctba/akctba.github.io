@@ -1,9 +1,9 @@
-
+@import './consts';
 
 .menuItem {
 
     padding: 10px;
-    border: 3px solid green;
+    border: 3px solid $color1;
     border-radius: 10px;
 
     font-size: medium;
@@ -29,11 +29,11 @@
 
 .menuItem:hover {
     background-color: rgb(31, 31, 31);
-    box-shadow: 3px 3px 1px #4dcc4d;
+    box-shadow: 3px 3px 1px $color2;
     cursor: pointer;
 
     .mnLed {
-        color: #4dcc4d;
+        color: #e24b30;
     }
 
 }
@@ -46,7 +46,7 @@
         grid-template-rows: repeat(4, 1fr);
         row-gap: 12px;
         
-        border-left: 3px solid green;
+        border-left: 3px solid $color1;
         border-bottom: none;
 
         padding-left: 20px;
@@ -58,7 +58,7 @@
 /* SMARTPHONES LANDSCAPE */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .navGroup {
-        border-left: 3px solid blue;
+        border-left: 3px solid $color1;
     }
 }
 
@@ -70,7 +70,7 @@
         column-gap: 20px;
     
         padding-bottom: 20px;
-        border-bottom: 3px solid green;
+        border-bottom: 3px solid $color1;
     }
 }
 

@@ -1,3 +1,5 @@
+@import './consts';
+
 /* FONTS
 <link href="https://fonts.googleapis.com/css?family=Electrolize|Montserrat&display=swap" rel="stylesheet">
 */
@@ -37,7 +39,7 @@ header {
 nav {
     width: 80%;
     padding-top: 20px;
-    
+
 }
 
 .logo {
@@ -45,20 +47,133 @@ nav {
     padding: 20px;
 }
 
+.front {
+    background-image: url('../images/backblue.jpg');
+    /* Center the image */
+    background-position: center;
+    /* Do not repeat the image */
+    background-repeat: no-repeat;
+    /* Resize the background image to cover the entire container */
+    background-size: cover;
+
+    .devname {
+        margin: auto;
+        width: fit-content;
+        height: fit-content;
+        border-radius: 8px; 
+        background-color: $color2;
+
+        h1 {
+            color: black;
+            font-size: 3em;
+        }
+        img {
+            padding: 15px;
+        }
+        h2 {
+            color: $color1;
+            text-align: center;
+        }
+
+    }
+    
+}
+
+.about {
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 80%;
+    margin: 20px auto;
+    padding: 60px;
+    background-color: $color1a;
+    border-radius: 20px;
+
+    .content {
+        
+
+        .p1 {
+            font-size: 1.2em;
+            border-bottom: 2px solid $color1;
+        }
+
+        .p2 {
+            padding: 10px;
+            font-weight: lighter;
+        }
+    }
+
+    .picture img {
+        
+        border-radius: 50%;
+        width: 200px;
+    }
+}
+
+.ido {
+    margin: auto;
+}
+
+.idoContainer {
+    background-color: $color1a;
+    border-radius: 20px;
+    width: 80%;
+    margin: 20px auto;
+    padding: 40px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+
+    grid-template-areas: 
+        'top-left top-right'
+        'bottom-left bottom-right';
+
+    .idocontent {
+        padding: 40px;
+    }
+
+    .top-left {
+        grid-area: top-left;
+        border-right: 1px solid $color2a;
+    }
+
+    .top-right {
+        grid-area: top-right;
+        border-bottom: 1px solid $color2a;
+    }
+    
+    .bottom-right {
+        grid-area: bottom-right;
+        border-left: 1px solid $color2a;
+    }
+
+    .bottom-left {
+        grid-area: bottom-left;
+        border-top: 1px solid $color2a;
+    }
+
+}
+
 /* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 380px) {
+@media only screen and (max-width : 380px) {
     .logo {
         width: 120px;
         padding: 20px;
     }
 }
 
+hr {
+    border-color: $color2a;
+    width: 50%;
+    margin: 0 auto;
+}
 
 section {
-    min-height: 500px;
+    min-height: 200px;
     padding-top: 100px;
-    margin: 0 auto;
+    padding-bottom: 100px;
+    margin: 20px auto;
 
     h1 {
         text-align: center;

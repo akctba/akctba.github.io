@@ -24,7 +24,7 @@
 
     <header>
         <a href="/">
-            <img class="logo" src="./images/akctbaLogo.png" alt="Akctba">
+            <img class="logo" src="./images/akctbaLogo_white.png" alt="Akctba">
         </a>
 
         <nav>
@@ -36,13 +36,13 @@
                     <div class="mnLed">&#9642;&#9642;&#9642;</div>
                 </div>
 
-                <div class="menuItem" onclick="document.location='#projects';return false;">
-                    <div class="mnName">Projects</div>
+                <div class="menuItem" onclick="document.location='#ido';return false;">
+                    <div class="mnName">Experience</div>
                     <div class="mnLed">&#9642;&#9642;&#9642;</div>
                 </div>
 
-                <div class="menuItem" onclick="document.location='#experience';return false;">
-                    <div class="mnName">Experience</div>
+                <div class="menuItem" onclick="document.location='#skills';return false;">
+                    <div class="mnName">Skills</div>
                     <div class="mnLed">&#9642;&#9642;&#9642;</div>
                 </div>
 
@@ -56,28 +56,135 @@
 
     </header>
 
-    <section class="">
+    <section class="front">
+
+        <div class="devname">
+            <!-- <h1>Alex Kayser</h1> -->
+            <img src="./images/akctbaLogo.png" alt="Alex Kayser" width="280px">
+            <h2>Java Developer</h2>
+        </div>
 
     </section>
 
-    <section class="about" id="about">
-        <h1>About</h1>
+    <hr id="about">
+    <section class="about">
+        <!-- <h1>About</h1> -->
+        
+        <div class="content">
+            <p class="p1">
+            Hey, I'm Alex, a mature Java Developer who ensure high quality of Java Application Development.</p>
+            <p class="p2">
+                Having worked with Java Web for over a decade, I was able to be part of several types of teams and projects.
+            </p>
+            <p class="p2">
+                My passion is to transform business requirements into functional software that bring the expected results to the organization, creating clean and easy to understand architecture and code.
+            </p>
+            <a href="./Resume_AlexKayser_Java.pdf">View my full Résumé</a>
+        </div>
 
-        <a href="./Resume_AlexKayser_Java.pdf">Resume</a>
+        <div class="picture">
+            <img src="./images/alex_picture.JPG" alt="Alex Kayser in Vancouver">
+        </div>
+
     </section>
 
-    <section class="projects" id="projects">
-        <h1>Projects</h1>
+    <hr id="ido">
+    <section class="ido">
+        <h1>What I do</h1>
+
+        <div class="idoContainer">
+            <div class="idocontent top-left">
+                <h2>Backend developer</h2>
+                <p>Java backend developer, MVC arquitecture, </p>
+            </div>
+            <div class="idocontent top-right">
+                <h2>Integration</h2>
+                <p>Java backend developer, MVC arquitecture, </p>
+            </div>
+            <div class="idocontent bottom-left">
+                <h2>System Analisys</h2>
+                <p>Java backend developer, MVC arquitecture, </p>
+            </div>
+            <div class="idocontent bottom-right">
+                <h2>Maintenance</h2>
+                <p>Java backend developer, MVC arquitecture, </p>
+            </div>
+        </div>
     </section>
 
-    <section class="experience" id="experience">
-        <h1>Experience</h1>
+    <hr id="skills">
+    <section class="skills">
+        <h1>Skills</h1>
+
+        <div class="skillsContainer">
+            <div class="skill">
+                <h2>Development</h2>
+                <ul class="list-skill">
+                    <li class="expItem" id="java">Java</li>
+                    <li>HTML5</li>
+                    <li>JavaScript</li>
+                    <li>JSF</li>
+                    <li>Servlets</li>
+                    <li>Webservice</li>
+                    <li>JMS</li>
+                    <li>JUnit</li>
+                    <li>Jasper</li>
+                </ul>
+            </div>
+            <div class="skill">
+                <h2>Tools</h2>
+                <ul class="list-skill">
+                    <li>Eclipse</li>
+                    <li>GIT+GitHub</li>
+                    <li>VScode</li>
+                    <li>Workbench</li>
+                    <li>Compass</li>
+                    <li>Bash</li>
+                    <li>Postman</li>
+                    <li>Swagger</li>
+                    <li>Atlassian</li>
+                </ul>
+            </div>
+            <div class="skill">
+                <h2>Knowledge</h2>
+                <ul class="list-skill">
+                    <li>OOP</li>
+                    <li>MVC</li>
+                    <li>TDD</li>
+                    <li>PrimeFaces</li>
+                    <li>SQL PL/SQL</li>
+                    <li>NoSQL</li>
+                    <li>XML</li>
+                    <li>Json</li>
+                    <li>WSDL</li>
+                </ul>
+            </div>
+            <div class="skill">
+                <h2>Environment</h2>
+                <ul class="list-skill">
+                    <li>Windows</li>
+                    <li>MacOS</li>
+                    <li>Oracle</li>
+                    <li>MySql</li>
+                    <li>MongoDB</li>
+                    <li>AWS</li>
+                    <li>Tomcat</li>
+                    <li>Wildfly</li>
+                    <li>Docker</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
         <h2 class="expItem" id="java">Java</h2>
         <h2 class="expItem" id="tomcat">TomCat</h2>
 
     </section>
 
-    <section class="contact" id="contact">
+    <hr id="contact">
+    <section class="contact">
         <h1>Contact</h1>
 
         <a href="./Resume_AlexKayser_Java.pdf">Resume</a>

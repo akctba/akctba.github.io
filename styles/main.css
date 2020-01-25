@@ -41,6 +41,120 @@ nav {
   padding: 20px;
 }
 
+.front {
+  background-image: url("../images/backblue.jpg");
+  /* Center the image */
+  background-position: center;
+  /* Do not repeat the image */
+  background-repeat: no-repeat;
+  /* Resize the background image to cover the entire container */
+  background-size: cover;
+}
+
+.front .devname {
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 8px;
+  background-color: #4CB0F7;
+}
+
+.front .devname h1 {
+  color: black;
+  font-size: 3em;
+}
+
+.front .devname img {
+  padding: 15px;
+}
+
+.front .devname h2 {
+  color: #205CC5;
+  text-align: center;
+}
+
+.about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  width: 80%;
+  margin: 20px auto;
+  padding: 60px;
+  background-color: rgba(32, 92, 197, 0.5);
+  border-radius: 20px;
+}
+
+.about .content .p1 {
+  font-size: 1.2em;
+  border-bottom: 2px solid #205CC5;
+}
+
+.about .content .p2 {
+  padding: 10px;
+  font-weight: lighter;
+}
+
+.about .picture img {
+  border-radius: 50%;
+  width: 200px;
+}
+
+.ido {
+  margin: auto;
+}
+
+.idoContainer {
+  background-color: rgba(32, 92, 197, 0.5);
+  border-radius: 20px;
+  width: 80%;
+  margin: 20px auto;
+  padding: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: 'top-left top-right' 'bottom-left bottom-right';
+}
+
+.idoContainer .idocontent {
+  padding: 40px;
+}
+
+.idoContainer .top-left {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: top-left;
+  border-right: 1px solid rgba(76, 176, 247, 0.5);
+}
+
+.idoContainer .top-right {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: top-right;
+  border-bottom: 1px solid rgba(76, 176, 247, 0.5);
+}
+
+.idoContainer .bottom-right {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: bottom-right;
+  border-left: 1px solid rgba(76, 176, 247, 0.5);
+}
+
+.idoContainer .bottom-left {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: bottom-left;
+  border-top: 1px solid rgba(76, 176, 247, 0.5);
+}
+
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 380px) {
   .logo {
@@ -49,10 +163,17 @@ nav {
   }
 }
 
-section {
-  min-height: 500px;
-  padding-top: 100px;
+hr {
+  border-color: rgba(76, 176, 247, 0.5);
+  width: 50%;
   margin: 0 auto;
+}
+
+section {
+  min-height: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 20px auto;
 }
 
 section h1 {
