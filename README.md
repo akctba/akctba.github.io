@@ -2,7 +2,7 @@
 ## Personal page
 
 This is my personal page.
-Created with HTML, (S)CSS and javascript. No copied templates from the internet or frameworks.
+Created with HTML, (S)CSS and JavaScript. No copied templates from the internet or frameworks.
 
 ### Tools
 
