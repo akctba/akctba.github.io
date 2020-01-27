@@ -106,6 +106,13 @@ nav {
 
 .ido {
   margin: auto;
+  background-image: url("../images/desktop2.jpg");
+  /* Center the image */
+  background-position: center;
+  /* Do not repeat the image */
+  background-repeat: no-repeat;
+  /* Resize the background image to cover the entire container */
+  background-size: cover;
 }
 
 .idoContainer {
@@ -168,6 +175,38 @@ nav {
 
 .skillsContainer .skill {
   margin: 20px;
+}
+
+.contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  width: 80%;
+  background-image: url("../images/email-scipts-background-2.jpg");
+  /* Center the image */
+  background-position: right;
+  /* Do not repeat the image */
+  background-repeat: no-repeat;
+  /* Resize the background image to cover the entire container */
+  background-size: cover;
+}
+
+.contact .socialmedia {
+  margin: 0 auto;
+}
+
+.contact .socialmedia .icon {
+  text-decoration: none;
+}
+
+.contact .socialmedia .icon img {
+  width: 4em;
+}
+
+.contact .resume {
+  padding: 20px;
+  text-align: center;
 }
 
 /* Smartphones (portrait) ----------- */

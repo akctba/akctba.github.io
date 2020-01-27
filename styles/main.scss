@@ -3,10 +3,8 @@
 /* FONTS
 <link href="https://fonts.googleapis.com/css?family=Electrolize|Montserrat&display=swap" rel="stylesheet">
 */
-$content-font-family: 'Montserrat',
-sans-serif;
-$title-font-family: 'Electrolize',
-sans-serif;
+$content-font-family: 'Montserrat', sans-serif;
+$title-font-family: 'Electrolize', sans-serif;
 
 /* reset and defaults */
 * {
@@ -112,6 +110,14 @@ nav {
 
 .ido {
     margin: auto;
+    background-image: url('../images/desktop2.jpg');
+
+    /* Center the image */
+    background-position: center;
+    /* Do not repeat the image */
+    background-repeat: no-repeat;
+    /* Resize the background image to cover the entire container */
+    background-size: cover;
 }
 
 .idoContainer {
@@ -165,6 +171,37 @@ nav {
 
     .skill {
         margin: 20px;
+    }
+
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+
+    background-image: url('../images/email-scipts-background-2.jpg');
+    /* Center the image */
+    background-position: right;
+    /* Do not repeat the image */
+    background-repeat: no-repeat;
+    /* Resize the background image to cover the entire container */
+    background-size: cover;
+
+    .socialmedia {
+        margin: 0 auto;
+        .icon {
+            text-decoration: none;
+
+            img {
+                width: 4em;
+            }
+        }
+    }
+
+    .resume {
+        padding: 20px;
+        text-align: center;
     }
 
 }
