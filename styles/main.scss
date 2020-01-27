@@ -96,8 +96,18 @@ nav {
         }
 
         .p2 {
-            padding: 10px;
+            padding: 12px;
             font-weight: lighter;
+        }
+
+        a {
+            background-color: $color1a;
+            padding: 8px;
+            margin: 8px;
+            border-radius: 8px;
+        }
+        a:hover {
+            background-color: $color2a;
         }
     }
 
@@ -211,6 +221,33 @@ nav {
     .logo {
         width: 120px;
         padding: 20px;
+    }
+
+    .idoContainer {
+        grid-template-areas: 
+            'top-left'
+            'top-right'
+            'bottom-left'
+            'bottom-right';
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+
+        padding: 10px;
+
+        text-align: center;
+
+        .picture {
+            padding: 20px;
+        }
+
+    }
+
+    .skillsContainer {
+        grid-template-columns: 1fr;
     }
 }
 

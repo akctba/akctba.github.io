@@ -95,8 +95,19 @@ nav {
 }
 
 .about .content .p2 {
-  padding: 10px;
+  padding: 12px;
   font-weight: lighter;
+}
+
+.about .content a {
+  background-color: rgba(32, 92, 197, 0.5);
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.about .content a:hover {
+  background-color: rgba(76, 176, 247, 0.5);
 }
 
 .about .picture img {
@@ -214,6 +225,25 @@ nav {
   .logo {
     width: 120px;
     padding: 20px;
+  }
+  .idoContainer {
+        grid-template-areas: 'top-left' 'top-right' 'bottom-left' 'bottom-right';
+  }
+  .about {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+  }
+  .about .picture {
+    padding: 20px;
+  }
+  .skillsContainer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
