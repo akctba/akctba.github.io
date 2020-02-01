@@ -1,0 +1,57 @@
+/**
+ Alex Kayser
+*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.passMessage {
+    background-color: #9CB7CE;
+    width: 100%;
+    margin: 0;
+    padding: 100px 0;
+}
+
+.passMessage main {
+    width: fit-content;
+    background-color: #F5F5F5;
+    margin: 50px auto;
+    padding: 50px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.passMessage main h1 {
+    margin: 0 0 20px 0;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.passMessage main input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid grey;
+    text-align: center;
+    font-size: 1em;
+}
+
+.passMessage main button {
+    background-color: #9CB7CE;
+    border: 2px solid #BED7F5;
+    border-radius: 8px;
+    color: #F5F5F5;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.passMessage .dialog {
+    color: #9CB7CE;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
