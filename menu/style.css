@@ -1,5 +1,92 @@
+/* General classes */
+a {
+    text-decoration: none;
+}
+
 header {
     background-color: white;
     position: fixed;
-    
+    width: 100%;
+}
+
+header .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+
+header .menu li {
+    display: inline-block;
+}
+
+header .menu li a {
+    display: block;
+    padding: 20px;
+    border-right: 1px solid #f4f4f4;
+}
+
+header .menu li a:hover {
+    background-color: #f4f4f4;
+}
+
+.logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+}
+
+/* menu */
+header .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+}
+
+header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+header .menu-icon .navicon:before,
+header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* Menu btn */
+.menu-btn {
+    display: none;
+}
+
+header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon::before {
+    transform: rotate(-45deg);
+}
+
+header .menu-btn:checked ~ .menu-icon:not() .navicon:before {
+
 }
