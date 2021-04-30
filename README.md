@@ -2,7 +2,7 @@
 ## Personal page
 
 This is my personal page.
-Created with HTML, (S)CSS and JavaScript. No copied templates from the internet or frameworks.
+Created from scratch using HTML, SCSS and JavaScript.
 
 ### Tools
 
@@ -10,6 +10,6 @@ Created with HTML, (S)CSS and JavaScript. No copied templates from the internet 
     - Beautify
     - Live Server
     - Live Sass compiler
-- GItHub
-- GitHub Desktop
+- HTML, CSS
+
 
