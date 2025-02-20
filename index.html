@@ -1,232 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- cache control -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
+    <title>Alex Kayser - Full Stack Software Engineer</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <link rel="icon" href="./images/favicon.ico">
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
 
-    <title>Alex Kayser - Software Engineer</title>
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/menu.css">
-    <link href="https://fonts.googleapis.com/css?family=Electrolize|Montserrat&display=swap" rel="stylesheet">
-    
-    <script src="./js/main.js"></script>
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        nav {
+            background: var(--secondary-color);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .skills {
+            background: var(--light-bg);
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-tag {
+            background: var(--secondary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+        }
+    </style>
 </head>
-
 <body>
-
     <header>
-        <a href="/">
-            <img class="logo" src="./images/akctbaLogo_white.png" alt="Akctba">
-        </a>
-
-        <nav>
-
-            <div class="navGroup">
-
-                <div class="menuItem" onclick="document.location='#about';return false;">
-                    <div class="mnName">About</div>
-                    <div class="mnLed">&#9642;&#9642;&#9642;</div>
-                </div>
-
-                <div class="menuItem" onclick="document.location='#ido';return false;">
-                    <div class="mnName">Experience</div>
-                    <div class="mnLed">&#9642;&#9642;&#9642;</div>
-                </div>
-
-                <div class="menuItem" onclick="document.location='#skills';return false;">
-                    <div class="mnName">Skills</div>
-                    <div class="mnLed">&#9642;&#9642;&#9642;</div>
-                </div>
-
-                <div class="menuItem" onclick="document.location='#contact';return false;">
-                    <div class="mnName">Contact</div>
-                    <div class="mnLed">&#9642;&#9642;&#9642;</div>
-                </div>
-            </div>
-
-        </nav>
-
+        <h1>Alex Kayser</h1>
+        <p>Full Stack Software Engineer</p>
     </header>
 
-    <section class="front">
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        <div class="devname">
-            <!-- <h1>Alex Kayser</h1> -->
-            <img src="./images/akctbaLogo.png" alt="Alex Kayser" width="280px">
-            <h2>Software Developer</h2>
-        </div>
-
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Software engineer with 10+ years of experience in full-stack development. Passionate about creating efficient, scalable solutions and learning new technologies. Currently based in Ontario, Canada.</p>
     </section>
 
-    <hr id="about">
-    <section class="about">
-        <!-- <h1>About</h1> -->
+    <section id="skills" class="skills">
+        <h2>Technical Skills</h2>
+        <div class="skill-list">
+            <span class="skill-tag">GO</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Spring Framework</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Angular</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">MongoDB</span>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <h3>Flexera Software - Senior Software Engineer</h3>
+        <p>Leading development of microservices and web applications using Java, Go and React. Implementing cloud-native solutions and maintaining high-performance distributed systems.</p>
         
-        <div class="content">
-            <p class="p1">
-            Hey, I am Alex, an experient Software Developer who ensure high quality of application development.</p>
-            <p class="p2">
-                Having worked with Software Development for over a decade, I was able to be part of several types of projects, waterfall and agile methodologies, solo, small and big teams, small and big companies. 
-            </p>
-            <p class="p2">
-                My passion is to transform business requirements into functional software that bring the expected results to the organization, creating clean and easy to understand architecture and code.
-            </p>
-            <p class="p2">
-                <a href="#">View my full Résumé</a>
-            </p>
-        </div>
+        <h3>Univision Tecnologia</h3>
+        <p>Software development on Java web applications and backend services for an awesome and powerful HealthTech platform that constitutes a conversion point, SaaS, to dozens of healthcare companies, providing information and solutions to over four million mobile users under the same strong brand.</p>
 
-        <div class="picture">
-            <img src="./images/alex_picture.JPG" alt="Alex Kayser in Vancouver">
-        </div>
-
+        <h3>Unimed Curitiba - Java developer / System Analyst</h3>
+        <p>Performed user support over a ticket system finding solutions and managing continuous follow-up for desktop hardware, OS, network and company software including ERP.</p>
     </section>
 
-    <hr id="ido">
-    <section class="ido">
-        <h1>What I do</h1>
-
-        <div class="idoContainer">
-            <div class="idocontent top-left">
-                <h2>System Analysis</h2>
-                <p>Requirements Analysis, market research, proof of concepts, RFI/RFP, Buy vs Build, design, UML and BPM.</p>
-            </div>
-            <div class="idocontent top-right">
-                <h2>Integration</h2>
-                <p>Web services REST and SOAP, authentication, messaging services (JMS), databases integration, ETL.</p>
-            </div>
-            <div class="idocontent bottom-left">
-                <h2>Backend developer</h2>
-                <p>Java development, MVC arquitecture, JavaEE and Spring.</p>
-                <p>JavaScript, NodeJS development, MVC architecture, JavaEE and Spring.</p>
-            </div>
-            <div class="idocontent bottom-right">
-                <h2>Maintenance</h2>
-                <p>Legacy software maintenance, development of new features, performance analysis.</p>
-            </div>
-        </div>
-    </section>
-
-    <hr id="skills">
-    <section class="skills">
-        <h1>Skills</h1>
-
-        <div class="skillsContainer">
-            <div class="skill">
-                <h2>Development</h2>
-                <ul class="list-skill">
-                    <li class="expItem" id="go">GO</li>
-                    <li class="expItem" id="java">Java</li>
-                    <li class="expItem" id="html5">HTML5 | CSS</li>
-                    <li class="expItem" id="JavaScript">JavaScript | Node | React</li>
-                    <li class="expItem" id="jsf">JSF</li>
-                    <li class="expItem" id="Servlets">Servlets</li>
-                    <li class="expItem" id="Webservice">Webservices</li>
-                    <li class="expItem" id="jms">JMS</li>
-                    <li class="expItem" id="JUnit">JUnit</li>
-                    <li class="expItem" id="Jasper">Jasper</li>
-                </ul>
-            </div>
-            <div class="skill">
-                <h2>Tools</h2>
-                <ul class="list-skill">
-                    <li class="expItem" id="VScode">Visual Studio Code</li>
-                    <li class="expItem" id="Eclipse">Eclipse</li>
-                    <li class="expItem" id="intellij">IntelliJ</li>
-                    <li class="expItem" id="git">GIT | GitHub | GitLab</li>
-                    <li class="expItem" id="Workbench">Workbench</li>
-                    <li class="expItem" id="Compass">Compass</li>
-                    <li class="expItem" id="Postman">Postman</li>
-                    <li class="expItem" id="Swagger">OpenAPI</li>
-                    <li class="expItem" id="Atlassian">Atlassian</li>
-                </ul>
-            </div>
-
-            
-            <div class="skill">
-                <h2>Knowledge</h2>
-                <ul class="list-skill">
-                    <li class="expItem" id="oop">OOP</li>
-                    <li class="expItem" id="mvc">MVC</li>
-                    <li class="expItem" id="tdd">TDD</li>
-                    <li class="expItem" id="PrimeFaces">PrimeFaces | Bootstrap | Material</li>
-                    <li class="expItem" id="plsql">SQL | PL/SQL</li>
-                    <li class="expItem" id="NoSQL">NoSQL</li>
-                    <li class="expItem" id="XML">XML</li>
-                    <li class="expItem" id="Json">Json</li>
-                    <li class="expItem" id="WSDL">WSDL</li>
-                    <li class="expItem" id="BPM">BPM</li>
-                </ul>
-            </div>
-            <div class="skill">
-                <h2>Environment</h2>
-                <ul class="list-skill">
-                    <li class="expItem" id="Windows">Windows</li>
-                    <li class="expItem" id="MacOS">MacOS</li>
-                    <li class="expItem" id="Oracle">Oracle</li>
-                    <li class="expItem" id="cicd">CICD Pipelines</li>
-                    <li class="expItem" id="MySql">MySql</li>
-                    <li class="expItem" id="MongoDB">MongoDB | NoSQL</li>
-                    <li class="expItem" id="AWS">AWS</li>
-                    <li class="expItem" id="tomcat">Apache | Tomcat</li>
-                    <li class="expItem" id="Wildfly">Wildfly | JBoss</li>
-                    <li class="expItem" id="Docker">Docker | MicroServices</li>
-                </ul>
-            </div>
-        </div>
-
-    </section>
-
-    <hr id="contact">
-    <section class="contact">
-        <h1>Contact</h1>
-
-
-        <div class="socialmedia">
-            <!-- <ul class="soc">
-                <li class="soc-item"> -->
-                    <a href="mailto:akctba@gmail.com" target="_blank" class="icon" title="email">
-                        <img src="./images//email.svg" alt="Send email">
-                    </a>
-                    <a href="https://www.linkedin.com/in/alexkayser/" target="_blank" class="icon" title="LinkedIn">
-                        <img src="./images/linkedin.svg" alt="Linkedin">
-                    </a>
-                    <a href="https://github.com/akctba/" target="_blank" class="icon" title="github">
-                        <img src="./images/github.svg" alt="Github">
-                    </a>
-                <!-- </li>
-            </ul> -->
-        </div>
-
-        <div class="resume">
-            <a href="#">View my Résumé</a>
-        </div>
-
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Connect with me on:</p>
+        <a href="https://www.linkedin.com/in/alexkayser" class="btn" target="_blank">LinkedIn</a>
+        <a href="https://github.com/akctba" class="btn" target="_blank">GitHub</a>
     </section>
 
     <footer>
-        Build by Alex Kayser &copy; 2021
+        <p>&copy; 2023 Alex Kayser. All rights reserved.</p>
     </footer>
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const section = document.querySelector(this.getAttribute('href'));
+                section.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
 
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div id="modal-container"></div>
-        </div>
+        // Add active class to nav items on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            document.querySelectorAll('section').forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 60) {
+                    current = section.getAttribute('id');
+                }
+            });
 
-    </div>
-    <script src="./js/final.js"></script>
+            document.querySelectorAll('nav a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
-
 </html>
