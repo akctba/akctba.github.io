@@ -1,0 +1,5 @@
+<!-- filepath: /Users/alexkayser/git/akctba.github.io/favicon.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="32" height="32">
+    <rect width="100" height="100" rx="20" fill="#2c3e50"/>
+    <text x="50" y="65" font-family="Arial" font-size="50" text-anchor="middle" fill="#3498db">AK</text>
+</svg>
