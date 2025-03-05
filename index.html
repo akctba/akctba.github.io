@@ -76,6 +76,16 @@
             font-size: 0.9rem;
         }
 
+        .skill-groups {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .skill-group h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
         .btn {
             display: inline-block;
             padding: 0.8rem 1.5rem;
@@ -125,23 +135,68 @@
 
     <section id="skills" class="skills">
         <h2>Technical Skills</h2>
-        <div class="skill-list">
-            <span class="skill-tag">GO</span>
-            <span class="skill-tag">Java</span>
-            <span class="skill-tag">Spring Framework</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">TypeScript</span>
-            <span class="skill-tag">Angular</span>
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">Node.js</span>
-            <span class="skill-tag">AWS</span>
-            <span class="skill-tag">Docker</span>
-            <span class="skill-tag">SQL</span>
-            <span class="skill-tag">MongoDB</span>
-            <span class="skill-tag">Oracle DBMS</span>
-            <span class="skill-tag">MySQL</span>
-            <span class="skill-tag">PostgreSQL</span>
+        <div class="skill-groups">
+            <div class="skill-group">
+            <h3>Programming Languages</h3>
+            <div class="skill-list"></div>
+                <span class="skill-tag">GO</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">TypeScript</span>
+            </div>
+            </div>
+
+            <div class="skill-group">
+            <h3>Frameworks & Libraries</h3>
+            <div class="skill-list">
+                <span class="skill-tag">Spring Framework</span>
+                <span class="skill-tag">JPA</span>
+                <span class="skill-tag">Angular</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+            </div>
+            </div>
+
+            <div class="skill-group">
+            <h3>Cloud & DevOps</h3>
+            <div class="skill-list">
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">Azure</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">CICD</span>
+                <span class="skill-tag">FinOps</span>
+            </div>
+            </div>
+
+            <div class="skill-group">
+            <h3>Databases</h3>
+            <div class="skill-list">
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">Oracle DBMS</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">PostgreSQL</span>
+            </div>
+            </div>
+
+            <div class="skill-group">
+            <h3>Tools & Technologies</h3>
+            <div class="skill-list">
+                <span class="skill-tag">Jira</span>
+                <span class="skill-tag">Confluence</span>
+                <span class="skill-tag">Eclipse</span>
+                <span class="skill-tag">VScode</span>
+                <span class="skill-tag">git</span>
+                <span class="skill-tag">SonarQube</span>
+                <span class="skill-tag">REST API</span>
+                <span class="skill-tag">SLDC</span>
+            </div>
+            </div>
         </div>
+
+        <style>
+
+        </style>
     </section>
 
     <section id="experience">
