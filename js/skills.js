@@ -37,7 +37,7 @@ const skillsData = {
     "MySQL",
     "PostgreSQL"
   ],
-  "Tools & Technologies": [
+  "Developer Tools": [
     "Jira",
     "Confluence",
     "Eclipse",
@@ -46,13 +46,17 @@ const skillsData = {
     "VScode",
     "git",
     "GitHub",
-    "SonarQube",
+    "SonarQube"
+  ],
+  "APIs & Integration": [
     "REST API",
+    "GraphQL",
+    "WebSocket"
+  ],
+  "Engineering Practices": [
     "SDLC",
     "Agile/Scrum",
-    "GraphQL",
-    "Unit Testing",
-    "CI/CD"
+    "Unit Testing"
   ],
   "Software Architecture": [
     "Design Patterns",
@@ -112,6 +116,7 @@ const skillExperienceDescriptions = {
   "SDLC": "Worked across software development lifecycle phases from requirements through release and maintenance.",
   "Agile/Scrum": "Delivered features iteratively using agile planning, sprint ceremonies, and continuous feedback loops.",
   "GraphQL": "Designed and consumed typed, flexible APIs that let clients request exactly the data they need.",
+  "WebSocket": "Implemented real-time, bidirectional client-server communication for low-latency application features.",
   "Microservices": "Designed and maintained independently deployable services for scalability and team autonomy.",
   "Unit Testing": "Implemented fast, isolated tests to validate business logic and improve change safety.",
 
