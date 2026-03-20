@@ -4,6 +4,8 @@ function createSkillGroups() {
         return;
     }
 
+    const clearSelections = [];
+
     const descriptions = typeof skillExperienceDescriptions === 'object' && skillExperienceDescriptions !== null
         ? skillExperienceDescriptions
         : {};
@@ -31,11 +33,20 @@ function createSkillGroups() {
         detailCard.appendChild(detailTitle);
         detailCard.appendChild(detailBody);
 
-        const selectSkill = (tag, skillName, description) => {
+        const clearSelection = () => {
             skillList.querySelectorAll('.skill-tag').forEach((node) => {
                 node.classList.remove('is-active');
                 node.setAttribute('aria-pressed', 'false');
             });
+            detailCard.hidden = true;
+            detailTitle.textContent = '';
+            detailBody.textContent = '';
+        };
+
+        clearSelections.push(clearSelection);
+
+        const selectSkill = (tag, skillName, description) => {
+            clearSelection();
 
             tag.classList.add('is-active');
             tag.setAttribute('aria-pressed', 'true');
@@ -56,6 +67,10 @@ function createSkillGroups() {
             skillTag.setAttribute('aria-pressed', 'false');
 
             skillTag.addEventListener('click', () => {
+                if (skillTag.classList.contains('is-active') && !detailCard.hidden) {
+                    clearSelection();
+                    return;
+                }
                 selectSkill(skillTag, skill, description);
             });
 
@@ -66,6 +81,15 @@ function createSkillGroups() {
         skillGroup.appendChild(skillList);
         skillGroup.appendChild(detailCard);
         skillGroupsContainer.appendChild(skillGroup);
+    });
+
+    document.addEventListener('click', (event) => {
+        const target = event.target;
+        if (target instanceof Element && target.closest('.skill-tag')) {
+            return;
+        }
+
+        clearSelections.forEach((clearSelection) => clearSelection());
     });
 }
 
