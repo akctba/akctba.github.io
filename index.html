@@ -5,119 +5,378 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex Kayser - Full Stack Software Engineer</title>
     <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --text-color: #333;
-            --light-bg: #f8f9fa;
+            --ink-900: #151826;
+            --ink-700: #283046;
+            --ink-500: #5a6278;
+            --sand-100: #f6f2eb;
+            --sand-200: #ece4d7;
+            --mint-300: #b2efe1;
+            --teal-500: #178f91;
+            --teal-600: #0f7376;
+            --orange-400: #f2994a;
+            --surface: #ffffff;
+            --radius-lg: 18px;
+            --radius-sm: 12px;
+            --shadow-soft: 0 15px 35px rgba(10, 18, 35, 0.09);
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
+            font-family: 'Sora', 'Segoe UI', Arial, sans-serif;
             line-height: 1.6;
-            color: var(--text-color);
+            color: var(--ink-900);
+            background:
+                radial-gradient(circle at 0% 0%, rgba(178, 239, 225, 0.5), transparent 45%),
+                radial-gradient(circle at 95% 5%, rgba(242, 153, 74, 0.22), transparent 35%),
+                linear-gradient(160deg, #fbfaf7 0%, #f2ede4 100%);
         }
 
         header {
-            background: var(--primary-color);
-            color: white;
-            padding: 2rem;
-            text-align: center;
+            max-width: 1200px;
+            margin: 2.2rem auto 0;
+            padding: 3.5rem 2rem;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .hero-copy h1 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: clamp(2.1rem, 5vw, 3.7rem);
+            line-height: 1.05;
+            letter-spacing: -0.03em;
+            margin-bottom: 1rem;
+        }
+
+        .hero-copy .subtitle {
+            max-width: 60ch;
+            color: var(--ink-700);
+            font-size: 1.04rem;
+        }
+
+        .accent {
+            color: var(--teal-600);
+        }
+
+        .hero-badges {
+            margin-top: 1.3rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.65rem;
+        }
+
+        .pill {
+            border: 1px solid rgba(23, 143, 145, 0.25);
+            background: rgba(255, 255, 255, 0.66);
+            backdrop-filter: blur(4px);
+            color: var(--ink-700);
+            padding: 0.45rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .hero-card {
+            background: linear-gradient(155deg, #183947 0%, #1f4f61 56%, #265f74 100%);
+            color: #f9fdff;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-soft);
+            padding: 1.3rem;
+            transform: rotate(-1.3deg);
+        }
+
+        .hero-card h2 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.4rem;
+            margin-bottom: 0.65rem;
+        }
+
+        .hero-card p {
+            color: #dceff6;
+            font-size: 0.93rem;
         }
 
         nav {
-            background: var(--secondary-color);
-            padding: 1rem;
+            background: rgba(21, 24, 38, 0.86);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 999px;
+            width: fit-content;
+            margin: 0 auto;
+            padding: 0.45rem 1.1rem;
             position: sticky;
-            top: 0;
+            top: 12px;
+            z-index: 20;
         }
 
         nav ul {
             list-style: none;
             display: flex;
             justify-content: center;
-            gap: 2rem;
+            gap: 0.75rem;
         }
 
         nav a {
-            color: white;
+            color: #f4f8fa;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 0.55rem 0.95rem;
+            border-radius: 999px;
+            transition: background 180ms ease, transform 180ms ease;
+        }
+
+        nav a:hover,
+        nav a.active {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-1px);
         }
 
         section {
-            padding: 3rem 2rem;
+            padding: 3.2rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
         }
 
+        .section-title {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: clamp(1.7rem, 2.6vw, 2.35rem);
+            margin-bottom: 0.8rem;
+            letter-spacing: -0.02em;
+            color: #141d32;
+        }
+
+        .section-kicker {
+            color: var(--ink-500);
+            margin-bottom: 1.2rem;
+            max-width: 70ch;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 1.2rem;
+        }
+
+        .about-panel,
+        .stats {
+            background: var(--surface);
+            border: 1px solid rgba(31, 46, 72, 0.1);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-soft);
+            padding: 1.5rem;
+        }
+
+        .about-panel p {
+            color: var(--ink-700);
+        }
+
+        .stats {
+            display: grid;
+            gap: 0.9rem;
+        }
+
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding-bottom: 0.7rem;
+            border-bottom: 1px dashed rgba(40, 48, 70, 0.18);
+        }
+
+        .stat-row:last-child {
+            border-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .stat-row strong {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.5rem;
+            color: var(--teal-600);
+        }
+
         .skills {
-            background: var(--light-bg);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(236, 228, 215, 0.55) 100%);
+            border-top: 1px solid rgba(20, 29, 50, 0.1);
+            border-bottom: 1px solid rgba(20, 29, 50, 0.1);
         }
 
         .skill-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 1rem;
+            gap: 0.65rem;
             margin-top: 1rem;
         }
 
         .skill-tag {
-            background: var(--secondary-color);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
+            background: linear-gradient(120deg, #1b7f92, #136b7f);
+            color: #f3fbff;
+            padding: 0.45rem 0.85rem;
+            border-radius: 999px;
+            font-size: 0.82rem;
+            letter-spacing: 0.01em;
+            box-shadow: 0 8px 15px rgba(19, 107, 127, 0.23);
         }
 
         .skill-groups {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
         }
+
+        .skill-group {
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(21, 24, 38, 0.1);
+            border-radius: var(--radius-sm);
+            padding: 1rem;
+        }
+
         .skill-group h3 {
-            margin-bottom: 1rem;
-            color: var(--primary-color);
+            margin-bottom: 0.75rem;
+            color: #1b2942;
+            font-size: 1rem;
+        }
+
+        .experience-grid {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .exp-card {
+            background: var(--surface);
+            border: 1px solid rgba(29, 35, 51, 0.12);
+            border-radius: var(--radius-sm);
+            padding: 1.2rem;
+            box-shadow: var(--shadow-soft);
+            transition: transform 220ms ease, box-shadow 220ms ease;
+        }
+
+        .exp-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 22px 38px rgba(15, 32, 56, 0.13);
+        }
+
+        .exp-card h3 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.3rem;
+            margin-bottom: 0.55rem;
+            color: #12213a;
+        }
+
+        .exp-card p {
+            color: var(--ink-700);
+        }
+
+        .contact-wrap {
+            background: linear-gradient(145deg, #fffefc, #f3ebde);
+            border: 1px solid rgba(18, 33, 58, 0.12);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-soft);
+            padding: 1.6rem;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 0.75rem;
         }
 
         .btn {
             display: inline-block;
-            padding: 0.8rem 1.5rem;
-            background: var(--secondary-color);
-            color: white;
+            padding: 0.7rem 1.25rem;
+            background: linear-gradient(120deg, #135f74, #178f91);
+            color: #f5fbfd;
             text-decoration: none;
-            border-radius: 5px;
-            margin-top: 1rem;
+            border-radius: 999px;
+            font-weight: 600;
+            letter-spacing: 0.01em;
+            transition: transform 180ms ease, filter 180ms ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.03);
         }
 
         footer {
-            background: var(--primary-color);
-            color: white;
+            background: #171c2c;
+            color: #d2ddf2;
             text-align: center;
-            padding: 1rem;
+            padding: 1.4rem;
             margin-top: 2rem;
         }
 
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition: none !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
         @media (max-width: 768px) {
+            header {
+                grid-template-columns: 1fr;
+                padding: 2.6rem 1rem 1rem;
+            }
+
+            .hero-card {
+                transform: none;
+            }
+
             nav ul {
-                flex-direction: column;
-                text-align: center;
-                gap: 1rem;
+                gap: 0.4rem;
+            }
+
+            nav a {
+                padding: 0.52rem 0.7rem;
+                font-size: 0.84rem;
+            }
+
+            section {
+                padding: 2.4rem 1rem;
+            }
+
+            .about-grid,
+            .skill-groups {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Alex Kayser</h1>
-        <p>Full Stack Software Engineer</p>
+        <div class="hero-copy">
+            <h1>Alex Kayser<br><span class="accent">Full Stack Software Engineer</span></h1>
+            <p class="subtitle">I design and build resilient products from backend architecture to responsive front-end experiences, with a focus on maintainability, cloud readiness, and measurable business impact.</p>
+            <div class="hero-badges">
+                <span class="pill">10+ years experience</span>
+                <span class="pill">Java · Go · React</span>
+                <span class="pill">Ontario, Canada</span>
+            </div>
+        </div>
+        <aside class="hero-card">
+            <h2>What I Build</h2>
+            <p>Production-grade web platforms, cloud-native services, and developer-friendly systems that scale without losing velocity.</p>
+        </aside>
     </header>
 
     <nav>
@@ -130,69 +389,103 @@
     </nav>
 
     <section id="about">
-        <h2>About Me</h2>
-        <p>Software engineer with 10+ years of experience in full-stack development. Passionate about creating efficient, scalable solutions and learning new technologies. Currently based in Ontario, Canada.</p>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-kicker">I enjoy taking complex technical problems and turning them into clean, dependable products that teams can ship and maintain with confidence.</p>
+        <div class="about-grid">
+            <article class="about-panel">
+                <p>Software engineer with 10+ years of experience in full-stack development. Passionate about creating efficient, scalable solutions and learning new technologies. Currently based in Ontario, Canada.</p>
+            </article>
+            <aside class="stats">
+                <div class="stat-row">
+                    <span>Years in engineering</span>
+                    <strong>10+</strong>
+                </div>
+                <div class="stat-row">
+                    <span>Primary stacks</span>
+                    <strong>3</strong>
+                </div>
+                <div class="stat-row">
+                    <span>Focus</span>
+                    <strong>Scale</strong>
+                </div>
+            </aside>
+        </div>
     </section>
 
     <section id="skills" class="skills">
-        <h2>Technical Skills</h2>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-kicker">Depth across backend, frontend, cloud, and architecture disciplines.</p>
         <div class="skill-groups">
             <!-- Skills will be dynamically inserted here -->
         </div>
     </section>
 
     <section id="experience">
-        <h2>Experience</h2>
-        <h3>Senior Software Engineer</h3>
-        <p>With a career spanning several years in software engineering, I have developed a diverse skill set that includes leading the development of microservices and web applications using Java, Go, and React. My experience encompasses implementing cloud-native solutions and maintaining high-performance distributed systems, ensuring that applications are scalable and efficient.</p>
-        
-        <h3>Software Engineer</h3>
-        <p>In one of my significant roles, I contributed to the development of a HealthTech platform, where I worked on Java web applications and backend services. This platform served as a critical SaaS solution, connecting dozens of healthcare companies and providing essential services to over four million mobile users. My efforts helped streamline operations and enhance service delivery, improving the overall user experience and system efficiency.</p>
-
-        <h3>Java developer / System Analyst</h3>
-        <p>Earlier in my professional journey, I built a strong foundation through hands-on experience in user support and system analysis. I managed technical support via a ticket system, addressing and resolving issues related to desktop hardware, operating systems, networks, and enterprise software, including ERP systems. This role sharpened my problem-solving skills and deepened my understanding of IT infrastructure, which have proven invaluable in my subsequent engineering roles.</p>
+        <h2 class="section-title">Experience</h2>
+        <p class="section-kicker">Roles focused on performance, reliability, and practical architecture decisions.</p>
+        <div class="experience-grid">
+            <article class="exp-card">
+                <h3>Senior Software Engineer</h3>
+                <p>With a career spanning several years in software engineering, I have developed a diverse skill set that includes leading the development of microservices and web applications using Java, Go, and React. My experience encompasses implementing cloud-native solutions and maintaining high-performance distributed systems, ensuring that applications are scalable and efficient.</p>
+            </article>
+            <article class="exp-card">
+                <h3>Software Engineer</h3>
+                <p>In one of my significant roles, I contributed to the development of a HealthTech platform, where I worked on Java web applications and backend services. This platform served as a critical SaaS solution, connecting dozens of healthcare companies and providing essential services to over four million mobile users. My efforts helped streamline operations and enhance service delivery, improving the overall user experience and system efficiency.</p>
+            </article>
+            <article class="exp-card">
+                <h3>Java Developer / System Analyst</h3>
+                <p>Earlier in my professional journey, I built a strong foundation through hands-on experience in user support and system analysis. I managed technical support via a ticket system, addressing and resolving issues related to desktop hardware, operating systems, networks, and enterprise software, including ERP systems. This role sharpened my problem-solving skills and deepened my understanding of IT infrastructure, which have proven invaluable in my subsequent engineering roles.</p>
+            </article>
+        </div>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Connect with me on:</p>
-        <a href="https://www.linkedin.com/in/alexkayser" class="btn" target="_blank">LinkedIn</a>
-        <a href="https://github.com/akctba" class="btn" target="_blank">GitHub</a>
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrap">
+            <p class="section-kicker">Open to software engineering and architecture opportunities. Let’s connect.</p>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/alexkayser" class="btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/akctba" class="btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2023 Alex Kayser. All rights reserved.</p>
+        <p>&copy; <span id="current-year">2026</span> Alex Kayser. All rights reserved.</p>
     </footer>
 
     <script>
-        // Smooth scroll for navigation links
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+        document.querySelectorAll('nav a').forEach((anchor) => {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const section = document.querySelector(this.getAttribute('href'));
-                section.scrollIntoView({
-                    behavior: 'smooth'
-                });
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
             });
         });
 
-        // Add active class to nav items on scroll
         window.addEventListener('scroll', () => {
             let current = '';
-            document.querySelectorAll('section').forEach(section => {
+            document.querySelectorAll('section').forEach((section) => {
                 const sectionTop = section.offsetTop;
                 if (pageYOffset >= sectionTop - 60) {
                     current = section.getAttribute('id');
                 }
             });
 
-            document.querySelectorAll('nav a').forEach(link => {
+            document.querySelectorAll('nav a').forEach((link) => {
                 link.classList.remove('active');
                 if (link.getAttribute('href').includes(current)) {
                     link.classList.add('active');
                 }
             });
         });
+
+        const yearNode = document.getElementById('current-year');
+        if (yearNode) {
+            yearNode.textContent = new Date().getFullYear();
+        }
     </script>
     <script src="js/skills.js"></script>
     <script src="js/main.js"></script>
