@@ -1,5 +1,12 @@
 function createSkillGroups() {
     const skillGroupsContainer = document.querySelector('.skill-groups');
+    if (!skillGroupsContainer) {
+        return;
+    }
+
+    const descriptions = typeof skillExperienceDescriptions === 'object' && skillExperienceDescriptions !== null
+        ? skillExperienceDescriptions
+        : {};
     
     Object.entries(skillsData).forEach(([category, skills]) => {
         const skillGroup = document.createElement('div');
@@ -10,16 +17,54 @@ function createSkillGroups() {
         
         const skillList = document.createElement('div');
         skillList.className = 'skill-list';
+
+        const detailCard = document.createElement('div');
+        detailCard.className = 'skill-detail-card';
+        detailCard.hidden = true;
+
+        const detailTitle = document.createElement('h4');
+        detailTitle.className = 'skill-detail-title';
+
+        const detailBody = document.createElement('p');
+        detailBody.className = 'skill-detail-text';
+
+        detailCard.appendChild(detailTitle);
+        detailCard.appendChild(detailBody);
+
+        const selectSkill = (tag, skillName, description) => {
+            skillList.querySelectorAll('.skill-tag').forEach((node) => {
+                node.classList.remove('is-active');
+                node.setAttribute('aria-pressed', 'false');
+            });
+
+            tag.classList.add('is-active');
+            tag.setAttribute('aria-pressed', 'true');
+            detailTitle.textContent = skillName;
+            detailBody.textContent = description;
+            detailCard.hidden = false;
+        };
         
         skills.forEach(skill => {
-            const skillTag = document.createElement('span');
+            const skillTag = document.createElement('button');
+            const description = descriptions[skill] || `Hands-on experience with ${skill} in production and delivery workflows.`;
+
+            skillTag.type = 'button';
             skillTag.className = 'skill-tag';
             skillTag.textContent = skill;
+            skillTag.title = description;
+            skillTag.setAttribute('aria-label', `${skill}: ${description}`);
+            skillTag.setAttribute('aria-pressed', 'false');
+
+            skillTag.addEventListener('click', () => {
+                selectSkill(skillTag, skill, description);
+            });
+
             skillList.appendChild(skillTag);
         });
         
         skillGroup.appendChild(title);
         skillGroup.appendChild(skillList);
+        skillGroup.appendChild(detailCard);
         skillGroupsContainer.appendChild(skillGroup);
     });
 }
