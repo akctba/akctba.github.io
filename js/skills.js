@@ -22,6 +22,7 @@ const skillsData = {
     "Azure",
     "Docker",
     "CICD",
+    "ArgoCD",
     "FinOps",
     "Kubernetes",
     "Jenkins",
