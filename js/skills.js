@@ -46,7 +46,10 @@ const skillsData = {
     "VScode",
     "git",
     "GitHub",
-    "SonarQube"
+    "SonarQube",
+    "Logz.io",
+    "Sumo Logic",
+    "Miro"
   ],
   "APIs & Integration": [
     "REST API",
@@ -112,6 +115,9 @@ const skillExperienceDescriptions = {
   "git": "Managed source control with distributed workflows, branching strategies, and collaborative code review.",
   "GitHub": "Used GitHub for repository hosting, pull requests, collaboration workflows, and CI/CD automation integration.",
   "SonarQube": "Used static analysis and quality gates to maintain code quality and reduce technical debt.",
+  "Logz.io": "Used Logz.io for centralized log management, alerting, and observability across distributed services.",
+  "Sumo Logic": "Leveraged Sumo Logic for real-time log analytics, dashboards, and operational intelligence.",
+  "Miro": "Used Miro for collaborative diagramming, system design whiteboarding, and cross-team planning sessions.",
   "REST API": "Designed and integrated HTTP APIs for interoperable services and system-to-system communication.",
   "SDLC": "Worked across software development lifecycle phases from requirements through release and maintenance.",
   "Agile/Scrum": "Delivered features iteratively using agile planning, sprint ceremonies, and continuous feedback loops.",
