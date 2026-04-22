@@ -53,6 +53,8 @@ const skillsData = {
   ],
   "APIs & Integration": [
     "REST API",
+      "Postman",
+      "OpenAPI",
     "GraphQL",
     "WebSocket"
   ],
@@ -119,6 +121,8 @@ const skillExperienceDescriptions = {
   "Sumo Logic": "Leveraged Sumo Logic for real-time log analytics, dashboards, and operational intelligence.",
   "Miro": "Used Miro for collaborative diagramming, system design whiteboarding, and cross-team planning sessions.",
   "REST API": "Designed and integrated HTTP APIs for interoperable services and system-to-system communication.",
+  "Postman": "Used Postman to test, document, and validate API behavior across development and integration workflows.",
+  "OpenAPI": "Used OpenAPI specifications to describe REST interfaces clearly and improve documentation and client integration.",
   "SDLC": "Worked across software development lifecycle phases from requirements through release and maintenance.",
   "Agile/Scrum": "Delivered features iteratively using agile planning, sprint ceremonies, and continuous feedback loops.",
   "GraphQL": "Designed and consumed typed, flexible APIs that let clients request exactly the data they need.",
