@@ -10,6 +10,6 @@ Created from scratch using HTML, SCSS and JavaScript.
     - Beautify
     - Live Server
     - Live Sass compiler
-- HTML, CSS
+- HTML, CSS, JavaScript
 
 
