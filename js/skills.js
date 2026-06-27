@@ -49,7 +49,8 @@ const skillsData = {
     "Code base exploration",
     "Code generation",
     "Code refactoring",
-    "Code review"
+    "Code review",
+    "PR review",
   ],
   "🛠️ Developer Tools": [
     "Jira",
@@ -96,7 +97,7 @@ const skillExperienceDescriptions = {
   "TypeScript": "Applied typed JavaScript for safer refactoring and better maintainability in medium and large codebases.",
   "SQL": "Used SQL and PL/SQL to query, model, and manage relational data in production systems.",
   "HTML/CSS": "Built structured web interfaces with HTML5 and CSS for responsive and accessible user experiences.",
-
+  
   "Claude": "Leveraged Claude AI for natural language understanding, code generation, and assisted development tasks.",
   "GitHub Copilot": "Used GitHub Copilot to accelerate coding with AI-assisted code suggestions and completions.",
   "Assisted Development": "Utilized AI tools to enhance development productivity, including code generation and refactoring.",
@@ -107,8 +108,9 @@ const skillExperienceDescriptions = {
   "Code generation": "Leveraged AI to generate boilerplate code, reducing manual coding effort and improving consistency.",
   "Code refactoring": "Applied AI-assisted refactoring techniques to improve code quality, readability, and maintainability.",
   "Code review": "Used AI tools to assist in code review processes, identifying potential issues and suggesting improvements.",
+  "PR review": "Leveraged AI to assist in pull request reviews, ensuring code quality and adherence to best practices.",
   "MCP (AI)": "Utilized Model-Driven Code Programming (MCP) to connect AI agents with external data sources and APIs for enhanced functionality.",
-
+  
   "Spring Framework": "Built Java backend services with dependency injection, web, and data modules to accelerate delivery.",
   "JPA": "Mapped Java domain models to relational databases and managed persistence through ORM patterns.",
   "Angular": "Developed component-driven front-end features with TypeScript and scalable UI architecture.",
@@ -117,7 +119,7 @@ const skillExperienceDescriptions = {
   "Express.js": "Implemented lightweight REST APIs and middleware pipelines using Express on Node.js.",
   "Vue.js": "Used Vue's declarative, component-based model to develop maintainable and reactive interfaces.",
   "Bootstrap": "Delivered responsive layouts quickly with a consistent design system and prebuilt UI components.",
-
+  
   "AWS": "Implemented cloud solutions using AWS services with a focus on scalable, pay-as-you-go architecture.",
   "Azure": "Worked with Azure cloud services to deploy and operate secure, scalable application workloads.",
   "Docker": "Containerized applications and dependencies to ensure repeatable builds and predictable runtime behavior.",
@@ -129,12 +131,12 @@ const skillExperienceDescriptions = {
   "CircleCI": "Configured pipeline workflows for continuous integration and delivery across multiple environments.",
   "Terraform": "Provisioned and versioned infrastructure as code for repeatable, auditable cloud environments.",
   "GitHub Actions": "Automated repository-native workflows for CI/CD, quality checks, and release tasks.",
-
+  
   "MongoDB": "Worked with document-oriented NoSQL data models, indexing, and schema-flexible persistence.",
   "Oracle DBMS": "Used Oracle Database for OLTP and mixed workloads with enterprise-grade data capabilities.",
   "MySQL": "Designed and maintained relational schemas and queries in MySQL for application workloads.",
   "PostgreSQL": "Built and optimized relational data solutions with PostgreSQL in transactional systems.",
-
+  
   "Jira": "Used Jira for issue tracking, sprint planning, and engineering workflow visibility.",
   "Confluence": "Maintained team documentation and technical knowledge sharing through Confluence workspaces.",
   "Eclipse": "Developed Java applications in Eclipse using plugin-based IDE tooling.",
@@ -156,7 +158,7 @@ const skillExperienceDescriptions = {
   "WebSocket": "Implemented real-time, bidirectional client-server communication for low-latency application features.",
   "Microservices": "Designed and maintained independently deployable services for scalability and team autonomy.",
   "Unit Testing": "Implemented fast, isolated tests to validate business logic and improve change safety.",
-
+  
   "Design Patterns": "Applied proven design patterns to improve code reuse, readability, and architectural consistency.",
   "System Design": "Designed distributed systems with attention to performance, scalability, resilience, and operability.",
   "OOP": "Applied object-oriented principles for encapsulation, abstraction, and maintainable code organization.",
