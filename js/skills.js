@@ -1,5 +1,5 @@
 const skillsData = {
-  "Programming Languages": [
+  "💻 Programming Languages": [
     "GO",
     "Java",
     "JavaScript",
@@ -7,7 +7,7 @@ const skillsData = {
     "SQL",
     "HTML/CSS"
   ],
-  "Frameworks & Libraries": [
+  "🧩 Frameworks & Libraries": [
     "Spring Framework",
     "JPA",
     "Angular",
@@ -17,7 +17,7 @@ const skillsData = {
     "Vue.js",
     "Bootstrap"
   ],
-  "Cloud & DevOps": [
+  "☁️ Cloud & DevOps": [
     "AWS",
     "Azure",
     "Docker",
@@ -30,14 +30,28 @@ const skillsData = {
     "Terraform",
     "GitHub Actions"
   ],
-  "Databases": [
+  "🗄️ Databases": [
     "SQL",
     "MongoDB",
     "Oracle DBMS",
     "MySQL",
     "PostgreSQL"
   ],
-  "Developer Tools": [
+  "🤖 AI": [
+    "Claude",
+    "GitHub Copilot",
+  ],
+  "🧠 AI Techniques": [
+    "Assisted Development",
+    "AI Skills",
+    "Agentic AI",
+    "RCA",
+    "Code base exploration",
+    "Code generation",
+    "Code refactoring",
+    "Code review"
+  ],
+  "🛠️ Developer Tools": [
     "Jira",
     "Confluence",
     "Eclipse",
@@ -51,19 +65,20 @@ const skillsData = {
     "Sumo Logic",
     "Miro"
   ],
-  "APIs & Integration": [
+  "🔗 APIs & Integration": [
     "REST API",
-      "Postman",
-      "OpenAPI",
+    "Postman",
+    "OpenAPI",
     "GraphQL",
-    "WebSocket"
+    "WebSocket",
+    "MCP (AI)"
   ],
-  "Engineering Practices": [
+  "⚙️ Engineering Practices": [
     "SDLC",
     "Agile/Scrum",
     "Unit Testing"
   ],
-  "Software Architecture": [
+  "🏗️ Software Architecture": [
     "Design Patterns",
     "System Design",
     "Microservices",
@@ -81,6 +96,18 @@ const skillExperienceDescriptions = {
   "TypeScript": "Applied typed JavaScript for safer refactoring and better maintainability in medium and large codebases.",
   "SQL": "Used SQL and PL/SQL to query, model, and manage relational data in production systems.",
   "HTML/CSS": "Built structured web interfaces with HTML5 and CSS for responsive and accessible user experiences.",
+
+  "Claude": "Leveraged Claude AI for natural language understanding, code generation, and assisted development tasks.",
+  "GitHub Copilot": "Used GitHub Copilot to accelerate coding with AI-assisted code suggestions and completions.",
+  "Assisted Development": "Utilized AI tools to enhance development productivity, including code generation and refactoring.",
+  "AI Skills": "Applied AI techniques to improve software development processes, including testing, debugging, and optimization.",
+  "Agentic AI": "Implemented agentic AI systems to automate decision-making and task execution in software workflows.",
+  "RCA": "Applied root cause analysis techniques to identify and resolve software defects and performance issues.",
+  "Code base exploration": "Used AI-assisted tools to navigate and understand large codebases for maintenance and feature development.",
+  "Code generation": "Leveraged AI to generate boilerplate code, reducing manual coding effort and improving consistency.",
+  "Code refactoring": "Applied AI-assisted refactoring techniques to improve code quality, readability, and maintainability.",
+  "Code review": "Used AI tools to assist in code review processes, identifying potential issues and suggesting improvements.",
+  "MCP (AI)": "Utilized Model-Driven Code Programming (MCP) to connect AI agents with external data sources and APIs for enhanced functionality.",
 
   "Spring Framework": "Built Java backend services with dependency injection, web, and data modules to accelerate delivery.",
   "JPA": "Mapped Java domain models to relational databases and managed persistence through ORM patterns.",
